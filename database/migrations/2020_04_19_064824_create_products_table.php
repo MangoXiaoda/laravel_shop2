@@ -13,8 +13,7 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
-            Schema::create('products', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) { 
                 $table->bigIncrements('id');
                 $table->string('title');
                 $table->text('description');
@@ -25,7 +24,6 @@ class CreateProductsTable extends Migration
                 $table->unsignedInteger('review_count')->default(0);
                 $table->decimal('price', 10, 2);
                 $table->timestamps();
-            });
         });
     }
 
