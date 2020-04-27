@@ -23,6 +23,7 @@
         </div>
       @endforeach
     </div>
+    <div class="float-right">{{ $products->render() }}</div> 
   </div>
 </div>
 </div>

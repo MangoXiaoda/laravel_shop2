@@ -11,7 +11,7 @@ class ProductsController extends Controller
 
     public function index(Request $request)
     {
-        $products = Product::query()->where('on_sale', true)->paginate();
+        $products = Product::query()->where('on_sale', true)->paginate(16);
 
         return view('products.index', ['products' => $products]);
     }

@@ -58,8 +58,7 @@ class ProductsController extends AdminController
     protected function form()
     {
         $form = new Form(new Product);
-        var_dump($form->image);
-        exit;
+        
         // 创建一个输入框，第一个参数 title 是模型的字段名，第二个参数是该字段描述
         $form->text('title', '商品名称')->rules('required');
 
