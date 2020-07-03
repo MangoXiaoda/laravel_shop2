@@ -14,6 +14,7 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         //
+        InvalidRequestException::class,
     ];
 
     /**
@@ -24,6 +25,7 @@ class Handler extends ExceptionHandler
     protected $dontFlash = [
         'password',
         'password_confirmation',
+        
     ];
 
     /**
